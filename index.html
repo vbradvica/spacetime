@@ -5,6 +5,12 @@
   <meta name="description"
     content="Visit us for high-quality result-driven development of web, mobile, and distributed applications.">
 
+  <!-- Favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://metatags.io/">
@@ -34,8 +40,16 @@
 
 <body>
   <script src="//d3js.org/d3.v4.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <nav class="navbar shadow-sm fixed-top navbar-light bg-light">
     <div class="container">
@@ -64,7 +78,10 @@
             <p>
               <code>Gatsby, ReactJs, Netlify</code>
             </p>
-            <a target="_blank" rel="noreferrer noopener" href="#" class="btn btn-sm btn-outline-dark">Preview</a>
+            <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="modal"
+              data-target="#modalPreviewFibula">
+              Preview
+            </button>
           </div>
         </div>
       </div>
@@ -106,7 +123,10 @@
             <p>
               <code>Gatsby, ReactJs, Netlify</code>
             </p>
-            <a target="_blank" rel="noreferrer noopener" href="#" class="btn btn-sm btn-outline-dark">Preview</a>
+            <button type="button" class="btn btn-sm btn-outline-dark" data-toggle="modal"
+              data-target="#modalPreviewRunningBeta">
+              Preview
+            </button>
           </div>
         </div>
       </div>
@@ -238,6 +258,38 @@
           <span>IBAN: </span>HR47 2340 0091 1605 0427 9<br />
           PRIVREDNA BANKA ZAGREB D.D. 10000 ZAGREB, Račkoga 6, Croatia<br />
           <span>SWIFT CODE: </span>PBZGHR2X
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalPreviewFibula" tabindex="-1" role="dialog" aria-labelledby="modalPreviewFibulaLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPreviewFibulaLabel">Fibula d.o.o.</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="modalPreviewRunningBeta" tabindex="-1" role="dialog"
+    aria-labelledby="modalPreviewRunningBetaLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalPreviewRunningBetaLabel">RunningBeta</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          ...
         </div>
       </div>
     </div>
